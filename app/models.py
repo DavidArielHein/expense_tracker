@@ -3,7 +3,7 @@ from decimal import Decimal
 from typing import List
 from sqlalchemy import ForeignKey, String, Numeric
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from database import Base
+from .database import Base
 
 class UserDB(Base):
     __tablename__ = "users"
